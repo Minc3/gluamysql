@@ -58,7 +58,7 @@ workspace "gluamysql"
 
 		filter "system:linux"
 			linkoptions { "-Wl,--as-needed" }
-			links { "pthread", "dl", "z" }
+			links { "pthread", "dl", "z", "ssl", "crypto" }
 
 		filter "configurations:*64"
 			libdirs "lib64"
